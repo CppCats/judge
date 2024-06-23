@@ -18,9 +18,9 @@ endif()
 add_subdirectory(thirdparty)
 add_subdirectory(src)
 
-option(NO_BUILD_TESTS "" OFF)
+option(TEST "" OFF)
 
-if (NOT ${NO_BUILD_TESTS})
+if (${TEST})
     message(STATUS "Building tests...")
     add_subdirectory(tests)
 endif()
